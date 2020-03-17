@@ -1,17 +1,17 @@
 Power Apps Hands on
 ---
 
-# 1. 環境準備/ログイン
+# 1. Environment prep and logins
 
-## 1.1. Power Apps コミュニティプランの新規作成
+## 1.1. Setting up Power Apps community plan
 
-既にコミュニティプランをお持ちの方は<br>
-スキップしていただいて構いません。
+If you already have a community plan setup,<br>
+you can skip this step.
 
-1. Power Apps コミュニティプラン サイトにアクセスする<br>
-https://powerapps.microsoft.com/ja-jp/communityplan/
+1. Access the Power Apps community plan site<br>
+https://powerapps.microsoft.com/en-us/communityplan/
 
-2. 「無料で今すぐ開始」をクリックする
+2. Click on Get Started Free
 ![](pasteimage/2020-03-15-19-36-01.png)
 
 3. サインアップを行う
