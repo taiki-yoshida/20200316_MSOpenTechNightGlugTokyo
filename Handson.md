@@ -166,7 +166,7 @@ In order to setup facial recognition using Face API you need to first setup a "P
 |Property Name|Display Name|Value|
 |:--|:--|:--|
 |Default|Default||
-|HintText|Hint Text|Set the Person ID here|
+|HintText|Hint Text|Set the Person Group ID here|
 
 ![](pasteimage/2020-03-17-01-33-28.png)
 
