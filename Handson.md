@@ -106,15 +106,15 @@ https://azure.microsoft.com/ja-jp/
 4. Setup the details like below<br>
 ![](pasteimage/2020-03-16-04-15-34.png)
 
+5. Click on Go to Resource<br>
+![](pasteimage/2020-03-16-04-15-35.png)
+
+6. Obtain the codes from Key1<br>
+![](pasteimage/2020-03-16-04-15-36.png)
+
 # 3. Create a facial recognition app with Power Apps
 
-## 3.1. Setup Azure
-
-5. Open the Face API and obtain the Access Key<br>
-![](pasteimage/2020-03-16-19-30-52.png)
-
-
-## 3.2. Open Power Apps
+## 3.1. Open Power Apps
 
 1. Open Power Apps from https://make.powerapps.com<br>
 ![](pasteimage/2020-03-16-23-39-29.png)
@@ -128,9 +128,9 @@ https://azure.microsoft.com/ja-jp/
 4. Power Apps studio will show up<br>
 ![](pasteimage/2020-03-17-00-17-51.png)
 
-## 3.3. Make screens
+## 3.2. Make screens
 
-### 3.3.1. Person Group 作成画面
+### 3.2.1. Person Group 作成画面
 In order to setup facial recognition using Face API you need to first setup a "Person Group" to register the user. We will first create a screen for that.
 
 1. Change the screen name<br>
@@ -206,7 +206,7 @@ Navigate(PersonAddScreen,ScreenTransition.Fade)
 
 ```
 
-### 3.3.2. Screen for Person
+### 3.2.2. Screen for Person
 
 1. Add a new blank screen and name it PersonAddScreen<br>
 ![](pasteimage/2020-03-17-02-30-05.png)
@@ -279,7 +279,7 @@ Navigate(FaceAuthenticationScreen,ScreenTransition.Fade)
 If(IsBlank(PersonNameInput.Text),DisplayMode.Disabled,DisplayMode.Edit)
 ```
 
-### 3.3.3. Create facial recognition screen
+### 3.2.3. Create facial recognition screen
 
 1. Add a new blank screen and set the name to FaceAuthenticationScreen<br>
 
@@ -343,7 +343,7 @@ Collect(AuthenticateLog,{
 
 ![](pasteimage/2020-03-17-05-09-50.png)
 
-### 3.3.4. Create a results screen
+### 3.2.4. Create a results screen
 
 1. Add a new blank screen and name it ResultScreen<br>
 
@@ -374,7 +374,7 @@ Concatenate("Match :",Text(Round((ThisItem.MatchRate*100),2)),"%")
 ![](pasteimage/2020-03-17-07-11-54.png)
 
 
-### 3.3.5. Create a home screen
+### 3.2.5. Create a home screen
 
 1. Add a new blank screen and name it HomeScreen<br>
 
@@ -430,7 +430,7 @@ If(IsBlank(PersonNameInput.Text),DisplayMode.Disabled,DisplayMode.Edit)
 Navigate(ResultScreen,ScreenTransition.Fade)
 ```
 
-### 3.3.6. Add the Back navigation button
+### 3.2.6. Add the Back navigation button
 
 1. Go to PersongroupAddScreen<br>
 
@@ -444,7 +444,7 @@ Back(ScreenTransition.Fade)
 ```
 4. Copy and paste the icon to every screen except the HomeScreen<br>
 
-### 3.3.7. Changing the order of HomeScreen
+### 3.2.7. Changing the order of HomeScreen
 
 To make sure the app shows the HomeScreen first when the app is launched, change the order of HomeScreen to be at the top.
 
@@ -453,13 +453,13 @@ To make sure the app shows the HomeScreen first when the app is launched, change
 ![](pasteimage/2020-03-17-07-24-14.png)
 
 
-## 3.4. Testing the app
+## 3.3. Testing the app
 
 Press the play button on the top right corner of the screen to try your app out.
 
 ![](pasteimage/2020-03-17-05-13-25.png)
 
-## 3.5. Saving the app
+## 3.4. Saving the app
 
 Go to File, select Save to save your current app configuration.
 
