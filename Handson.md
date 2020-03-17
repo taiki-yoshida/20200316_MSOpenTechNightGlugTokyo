@@ -18,10 +18,9 @@ https://powerapps.microsoft.com/en-us/communityplan/
 ![](pasteimage/2020-03-15-19-38-11.png)
 Note: you cannot use personal mails like Gmail or Hotmail.
 
-4. Authenticate with phone or SMS
-![](pasteimage/2020-03-15-19-42-32.png)
+4. Authenticate with phone or SMS if requested <br>
 
-5. Enter the acquired authorization code to authenticate
+5. If requested, enter the acquired authorization code to authenticate
 ![](pasteimage/2020-03-15-19-44-13.png)
 
 6. Enter your account details and click Start
@@ -78,6 +77,21 @@ https://azure.microsoft.com/ja-jp/
 4. Click Create<br>
 ![](pasteimage/2020-03-16-04-07-01.png)
 
+5. Once deployment is complete, click on Go to Resource<br>
+![](pasteimage/2020-03-16-04-07-02.png)
+
+6. Click on Containers<br>
+![](pasteimage/2020-03-16-04-07-03.png)
+
+7. Click on +Container
+![](pasteimage/2020-03-16-04-07-04.png)
+
+8. Specify like below and click Create<br>
+![](pasteimage/2020-03-16-04-07-05.png)
+
+9. Go to Access Keys, and obtain the Key from key1<br>
+![](pasteimage/2020-03-16-04-07-06.png)
+
 ## 2.3. Create a Face API
 
 1. Go to the resouce group you created, and click Add<br>
@@ -95,18 +109,6 @@ https://azure.microsoft.com/ja-jp/
 # 3. Create a facial recognition app with Power Apps
 
 ## 3.1. Setup Azure
-
-1. Open the Storage Account<br>
-![](pasteimage/2020-03-16-19-02-25.png)
-
-2. Click on Containers<br>
-![](pasteimage/2020-03-16-19-04-10.png)
-
-3. Create a new Container<br>
-![](pasteimage/2020-03-16-19-12-20.png)
-
-4. Obtain the Storage Account Key<br>
-![](pasteimage/2020-03-16-19-25-02.png)
 
 5. Open the Face API and obtain the Access Key<br>
 ![](pasteimage/2020-03-16-19-30-52.png)
