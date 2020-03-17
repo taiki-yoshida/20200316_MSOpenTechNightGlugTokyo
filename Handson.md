@@ -125,12 +125,15 @@ https://azure.microsoft.com/ja-jp/
 3. Select Tablet as the choice of app type<br>
 ![](pasteimage/2020-03-17-00-09-18.png)
 
-4. Power Apps studio will show up<br>
+4. Click on Skip if screen below show up<br>
+![](pasteimage/2020-03-17-00-17-50.png)
+
+5. Power Apps studio will show up<br>
 ![](pasteimage/2020-03-17-00-17-51.png)
 
 ## 3.2. Make screens
 
-### 3.2.1. Person Group 作成画面
+### 3.2.1. Screen for Person Group
 In order to setup facial recognition using Face API you need to first setup a "Person Group" to register the user. We will first create a screen for that.
 
 1. Change the screen name<br>
