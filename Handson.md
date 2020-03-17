@@ -14,175 +14,175 @@ https://powerapps.microsoft.com/en-us/communityplan/
 2. Click on Get Started Free
 ![](pasteimage/2020-03-15-19-36-01.png)
 
-3. サインアップを行う
+3. Sign-up
 ![](pasteimage/2020-03-15-19-38-11.png)
-※gmailやhotmailなどは使用できません。
+Note: you cannot use personal mails like Gmail or Hotmail.
 
-4. `電話もしくはSMS認証を行う
+4. Authenticate with phone or SMS
 ![](pasteimage/2020-03-15-19-42-32.png)
 
-5. 取得した認証コードを入力して認証を行う
+5. Enter the acquired authorization code to authenticate
 ![](pasteimage/2020-03-15-19-44-13.png)
 
-6. アカウントの詳細を入力して「開始」をクリックする
+6. Enter your account details and click Start
 ![](pasteimage/2020-03-15-19-47-05.png)
 
-## 1.2. Azure の新規登録
+## 1.2. Register for Azure
 
-既にAzureをご利用中の場合はスキップして頂いて<br>
-構いません。
+If you already have an Azure environment, you can skip this step.
 
-1. azure にアクセスする <br>
+1. Access Azure website<br>
 https://azure.microsoft.com/ja-jp/
 
-2. 「無料アカウント」をクリックする <br>
+
+2. Click on Start Free 
 ![](pasteimage/2020-03-17-05-50-31.png)
 
-3. 「無料で始める」をクリックする<br>
+3. Click on Start free again<br>
 ![](pasteimage/2020-03-17-05-51-25.png)
 
-4. Microsoft アカウントもしくは GitHub アカウント にて認証する<br>
+4. Login with your Microsoft Account or GitHub account<br>
 ![](pasteimage/2020-03-17-05-54-27.png)
 
-5. 各種必要事項を入力し、サインアップをクリックする
+5. Fill-in the necessary details and click on Sign up
 ![](pasteimage/2020-03-17-06-11-48.png)
 
 
-# 2. Azure側の準備
+# 2. Preparing Azure
 
-## 2.1. リソースグループの作成
+## 2.1. Create a resource group
 
-1. リソースグループをクリックする<br>
+1. Click on Resource Groups<br>
 ![](pasteimage/2020-03-16-03-45-02.png)
 
-2. 「追加」をクリックする<br>
+2. Click Add<br>
 ![](pasteimage/2020-03-16-03-45-57.png)
 
-3. リソースグループのパラメータを指定する<br>
+3. Set the parameters for resource group as below<br>
 ![](pasteimage/2020-03-16-03-50-08.png)
 
-4. 作成をクリックする。<br>
+4. Click Create<br>
 ![](pasteimage/2020-03-16-03-51-44.png)
 
-## 2.2. ストレージアカウントの作成
+## 2.2. Creating Storage Account
 
-1. 作成したリソースグループから「追加」をクリックする<br>
+1. Go to the resouce group you created, and click Add<br>
 ![](pasteimage/2020-03-16-03-55-20.png)
 
-2. ストレージアカウントを選択する<br>
+2. Select Storage Account<br>
 ![](pasteimage/2020-03-16-04-01-02.png)
 
-3. ストレージアカウントのパラメータを指定する<br>
+3. Setup the details like below<br>
 ![](pasteimage/2020-03-16-04-05-47.png)
 
-4. 作成をクリックする。<br>
+4. Click Create<br>
 ![](pasteimage/2020-03-16-04-07-01.png)
 
-## 2.3. Face APIの作成
+## 2.3. Create a Face API
 
-1. 作成したリソースグループから「追加」をクリックする<br>
+1. Go to the resouce group you created, and click Add<br>
 ![](pasteimage/2020-03-16-03-55-20.png)
 
-2. Faceを選択する<br>
+2. Select Face<br>
 ![](pasteimage/2020-03-16-04-12-43.png)
 
-3. 作成をクリックする<br>
+3. Click Create<br>
 ![](pasteimage/2020-03-16-04-12-27.png)
 
-4. Faceのパラメータを指定する<br>
+4. Setup the details like below<br>
 ![](pasteimage/2020-03-16-04-15-34.png)
 
-# 3. Power Apps のみで顔認証アプリを作成する
+# 3. Create a facial recognition app with Power Apps
 
-## 3.1. Azure 上の準備
+## 3.1. Setup Azure
 
-1. 作成済みのストレージアカウントを開く<br>
+1. Open the Storage Account<br>
 ![](pasteimage/2020-03-16-19-02-25.png)
 
-2. コンテナーを開く<br>
+2. Click on Containers<br>
 ![](pasteimage/2020-03-16-19-04-10.png)
 
-3. コンテナーを作成する<br>
+3. Create a new Container<br>
 ![](pasteimage/2020-03-16-19-12-20.png)
 
-4. ストレージアカウントのアクセスキーを取得する<br>
+4. Obtain the Storage Account Key<br>
 ![](pasteimage/2020-03-16-19-25-02.png)
 
-5. 作成済みのFace APIを開き、アクセスキーを取得する<br>
+5. Open the Face API and obtain the Access Key<br>
 ![](pasteimage/2020-03-16-19-30-52.png)
 
 
-## 3.2. Power Apps 編集画面を起動
+## 3.2. Open Power Apps
 
-1. Power Apps を開く<br>
+1. Open Power Apps from https://make.powerapps.com<br>
 ![](pasteimage/2020-03-16-23-39-29.png)
 
-2. キャンパスアプリを一から作成をクリック<br>
+2. Click Create Canvas App from blank<br>
 ![](pasteimage/2020-03-16-23-56-19.png)
 
-3. アプリをタブレットモードで作成する<br>
+3. Select Tablet as the choice of app type<br>
 ![](pasteimage/2020-03-17-00-09-18.png)
 
-4. Power Apps 編集画面が起動する<br>
+4. Power Apps studio will show up<br>
 ![](pasteimage/2020-03-17-00-17-51.png)
 
-## 3.3. 各種画面の作成
+## 3.3. Make screens
 
 ### 3.3.1. Person Group 作成画面
-Face API の顔認証を行う為には、ユーザーを登録するための Person Groupをあらかじめ作る必要があるため、その画面を作成します。
+In order to setup facial recognition using Face API you need to first setup a "Person Group" to register the user. We will first create a screen for that.
 
-1. 画面名の変更<br>
+1. Change the screen name<br>
 ![](pasteimage/2020-03-17-00-40-43.png)
 ![](pasteimage/2020-03-17-00-41-34.png)
 
-2. データソースを開く<br>
+2. Open Datasources<br>
 ![](pasteimage/2020-03-17-00-56-15.png)
 
-3. Face API を選択する<br>
+3. Select Face API<br>
 ![](pasteimage/2020-03-17-01-08-27.png)
 
-4. 初回利用時は認証情報が必要となるので、メモ帳にペーストした内容を適宜入力する<br>
+4. Paste the Face API key. You will only need to do this for the first time.<br>
 ![](pasteimage/2020-03-17-01-10-01.png)
 
-5. ツリービューに戻る<br>
+5. Go back to tree view<br>
 ![](pasteimage/2020-03-17-01-14-44.png)
 ![](pasteimage/2020-03-17-01-14-56.png)
 
-6. Person Group ID を指定する入力ボックスを作成する<br>
+6. Create a Textbox to enter the Person Group ID<br>
 ![](pasteimage/2020-03-17-01-15-47.png)
 ![](pasteimage/2020-03-17-01-16-09.png)
 
-7. 作成した入力ボックスの名称を「PersonGroupIDInput」に変更する<br>
+7. Change the name of Textbox to "PersonGroupIDInput"<br>
 ![](pasteimage/2020-03-17-01-17-08.png)
 ![](pasteimage/2020-03-17-01-47-38.png)
 
-8. PersonGroupIDInputのプロパティを以下のように変更する。<br>
+8. Change the property of PersonGroupIDInput to the following.<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Default|既定||
-|HintText|ヒントのテキスト|セットするPerson Group IDを入力してください|
+|Default|Default||
+|HintText|Hint Text|Set the Person ID here|
 
 ![](pasteimage/2020-03-17-01-33-28.png)
 
-9. PersonIDInputのラベルを作成する<br>
+9. Create a lable for PersonIDInput<br>
 ![](pasteimage/2020-03-17-01-43-25.png)
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|Person Group ID|
+|Text|Text|Person Group ID|
 
 ![](pasteimage/2020-03-17-01-44-59.png)
 
-10. 同様にPerson Group Nameを入力するテキストボックス(PersonGroupNameInput)とラベルを作成する。<br>
+10. Also create the Textbox for Person Group Name as PersonGroupNameInput<br>
 ![](pasteimage/2020-03-17-01-48-25.png)
 
-11. 登録用のボタン(PersonGroupSubmitButton)を作成する。<br>
+11. Create a button PersonGroupSubmitButton<br>
 ![](pasteimage/2020-03-17-01-50-28.png)
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|登録|
+|Text|Text|Register|
 
 ![](pasteimage/2020-03-17-02-18-21.png)
 
@@ -193,59 +193,59 @@ Face API の顔認証を行う為には、ユーザーを登録するための P
 FaceAPI.CreatePersonGroup(PersonGroupIDInput.Text,PersonGroupNameInput.Text);
 ```
 
-13. PersonGroupSubmitButton の DisplayMode プロパティに以下を指定する。
+13. Change the DisplayMode property of PersonGroupSubmitButton to below:
 
 ``` php
-//IDとNameが未入力の場合はボタン操作を無効化する
+//If ID and Name is not populated, disable button.
 If(Or(IsBlank(PersonGroupIDInput.Text),IsBlank(PersonGroupNameInput.Text)),DisplayMode.Disabled,DisplayMode.Edit)
 
-//PersonAddScreen に移動
+//Move to PersonAddScreen
 Navigate(PersonAddScreen,ScreenTransition.Fade)
 
 ```
 
-### 3.3.2. Person 作成画面
+### 3.3.2. Screen for Person
 
-1. 新たに空の画面を作成し、PersonAddScreenとする。<br>
+1. Add a new blank screen and name it PersonAddScreen<br>
 ![](pasteimage/2020-03-17-02-30-05.png)
 
-2. データソースを開く<br>
+2. Open Ddatasources<br>
 
-3. Azure Blob Storage を選択する<br>
+3. Select Azure Blob Storage<br>
 ![](pasteimage/2020-03-17-03-30-25.png)
 
-4. 初回利用時は認証情報が必要となるので、メモ帳にペーストした内容を適宜入力する<br>
+4. Paste the Azure Blob Storage API key. You will only need to do this for the first time.<br>
 ![](pasteimage/2020-03-17-03-32-07.png)
 
-5. カメラコントロールを追加し、名前を PersonAddCam に変更する。<br>
+5. Add a camera control and change the name to PersonAddCam<br>
 ![](pasteimage/2020-03-17-03-34-33.png)
 ![](pasteimage/2020-03-17-04-29-05.png)
 
-6. 複数のカメラがある場合の選択用として、ドロップダウンボックス（PersonAddCamSelect）を作成する<br>
+6. Add a dropdown box name this PersonAddCamSelect<br>
 ![](pasteimage/2020-03-17-03-36-34.png)
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
 |Items|--|[0,1,2]|
-|Default|既定|0|
+|Default|Default|0|
 
-7. PersonAddCam のプロパティを以下のように変更する<br>
+7. Change the properties of PersonAddCam to below<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Camera|カメラ|PersonAddCamSelect.SelectedText.Value|
-|StreamRate|ストリームレート|100|
+|Camera|Camera|PersonAddCamSelect.SelectedText.Value|
+|StreamRate|Stream Rate|100|
 
-8. Person Nameを入力するテキストボックス(PersonNameInput)とラベルを作成する。<br>
+8. Create a Textbox and a label to enter the Person Name. Name this as PersonNameInput and PersonNameLabel respectively<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Default|既定||
-|HintText|ヒントのテキスト|セットするPerson Nameを入力してください|
+|Default|Default||
+|HintText|Hint Text|Set Person Name here|
 
 9. 登録用のボタン(PersonSubmitButton)を作成する。<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
 |Text|テキスト|登録|
 
@@ -254,222 +254,220 @@ Navigate(PersonAddScreen,ScreenTransition.Fade)
 10. PersonSubmitButton の OnSelect プロパティに以下を指定する。
 
 ``` php
-//Person データ作成
+//Create Person data
 Set(PersonID,FaceAPI.CreatePerson(PersonGroupIDInput.Text,PersonNameInput.Text));
 
-//顔認証登録用イメージアップロード
-AzureBlobStorage.CreateBlockBlob("<コンテナー名>","learn.jpg",PersonAddCam.Stream);
+//Upload image for face registeration
+AzureBlobStorage.CreateBlockBlob("<Container Name>","learn.jpg",PersonAddCam.Stream);
 
-//顔認証登録用イメージURL生成
-Set(learnimageuri,AzureBlobStorage.CreateShareLinkByPath("<コンテナー名>/learn.jpg"));
+//General URL to register for face registeration
+Set(learnimageuri,AzureBlobStorage.CreateShareLinkByPath("<Container Name>/learn.jpg"));
 
-//顔認証用イメージ登録
+//Register face
 FaceAPI.AddPersonFace(PersonGroupIDInput.Text,PersonID.personId,learnimageuri.WebUrl);
 
-//FaceAuthenticationScreen に移動
+//Move to FaceAuthenticationScreen
 Navigate(FaceAuthenticationScreen,ScreenTransition.Fade)
 ```
 
-11. PersonSubmitButton の DisplayMode プロパティに以下を指定する。
+11. Change the DisplayMode property to the following for PersonSubmitButton
 
 ``` php
-//Nameが未入力の場合はボタン操作を無効化する
+//If name is not entered, disable button
 If(IsBlank(PersonNameInput.Text),DisplayMode.Disabled,DisplayMode.Edit)
 ```
 
-### 3.3.3. 顔認証画面
+### 3.3.3. Create facial recognition screen
 
-1. 新たに空の画面を作成し、FaceAuthenticationScreenとする。<br>
+1. Add a new blank screen and set the name to FaceAuthenticationScreen<br>
 
-2. ドロップダウンボックス（AuthenticateCamSelect）を作成する<br>
+2. Add a dropdown box and name it AuthenticateCamSelect<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
 |Items|--|[0,1,2]|
-|Default|既定|0|
+|Default|Default|0|
 
-3. カメラコントロールを追加し、名前を AuthenticateCam に変更する。<br>
+3. Add a camera control, and name it AuthenticateCam<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Camera|カメラ|AuthenticateCamSelect|
-|StreamRate|ストリームレート|100|
+|Camera|Camera|AuthenticateCamSelect|
+|StreamRate|Streaming rate|100|
 
-4. `認証用のボタン(AuthenticateSubmitButton)を作成する。<br>
+4. Create a button to start facial recognition. Name it AuthenticateSubmitButton<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|認証|
+|Text|Text|Recognize Face|
 
 5. AuthenticateSubmitButton の OnSelect プロパティに以下を指定する。
 
 ``` php
-//顔認証用イメージアップロード
-AzureBlobStorage.CreateBlockBlob("<コンテナー名>","authenticate.jpg",AuthenticateCam.Stream);
+//Upload image for facial recognition
+AzureBlobStorage.CreateBlockBlob("<Container Name>","authenticate.jpg",AuthenticateCam.Stream);
 
-//顔認証用イメージURL生成
-Set(autenticateimageuri,AzureBlobStorage.CreateShareLinkByPath("<コンテナー名>/authenticate.jpg"));
+//Generate URL for facial recognition image
+Set(autenticateimageuri,AzureBlobStorage.CreateShareLinkByPath("<Container Name>/authenticate.jpg"));
 
-//イメージ情報取得
+//Retrieve image
 Set(FaceIDdata,FaceAPI.Detect(autenticateimageuri.WebUrl,{returnFaceId:"true"}));
 
-//認証結果取得
+//Obtain recognition results
 Set(FaceVerify,FaceAPI.Verify(First(FaceIDdata).faceId,PersonGroupIDInput.Text,PersonID.personId))
 
-//認証結果を仮テーブルに格納する
+//Store result to a temporary table
 Collect(AuthenticateLog,{
     DateTime:Now(),
-    AuthResult:If(FaceVerify.isIdentical,"認証OK","認証NG"),
+    AuthResult:If(FaceVerify.isIdentical,"Face Verified","Unknown Face"),
     MatchLate:FaceVerify.confidence
     }
 )
 ```
 
-6. 認証結果を表示させるラベルとして AuthenticateResultLabel を作成する
+6. Create a label to display recognition results. Name it AuthenticateResultLabel<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|If(FaceVerify.isIdentical,"認証OK","認証NG")|
+|Text|テキスト|If(FaceVerify.isIdentical,"Face Verified","Unknown Face")|
 |Align|テキストのアラインメント|Align.Right|
 
-7. 一致率を表示させるラベルとして MatchLateLabel を作成する
+7. Create a label to display confidence percentage. Name this MatchRateLabel<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|Concatenate("一致率:",Text(Round((FaceVerify.confidence*100),2)),"%")|
-|Align|テキストのアラインメント|Align.Right|
+|Text|Text|Concatenate("Confidence: ",Text(Round((FaceVerify.confidence*100),2)),"%")|
+|Align|Text alignment|Align.Right|
 
 ![](pasteimage/2020-03-17-05-09-50.png)
 
-### 3.3.4.結果画面
+### 3.3.4. Create a results screen
 
-1. 新たに空の画面を作成し、ResultScreenとする。<br>
+1. Add a new blank screen and name it ResultScreen<br>
 
-2. ギャラリー (ResultGallary) を作成する<br>
+2. Add a Gallery and name it ResultGallary<br>
 ![](pasteimage/2020-03-17-07-01-59.png)
 
-3. データソースとして AuthenticateLog を選択する<br>
+3. Select AuthenticateLog as datasource<br>
 ![](pasteimage/2020-03-17-07-03-30.png)
 
-4. レイアウトに「タイトル、サブタイトル、本文」を選択する<br>
+4. Change layout to "Title, subtitle, body"<br>
 ![](pasteimage/2020-03-17-07-04-54.png)
 
-5. フィールドの編集をクリックし、データを以下のように設定する
+5. Click Edit on the field and change settings to below.
 ![](pasteimage/2020-03-17-07-07-04.png)
 
-|フィールド名|値|
+|Field Name|Value|
 |:--|:--|
-|Body1|MatchLate|
+|Body1|MatchRate|
 |Subtitle1|AuthResult|
 |Title1|DateTime|
 
-6. ツリービューの Body1 を選択し、Textプロパティを以下のように変更する<br>
+6. Click on Body1 in the tree view, and change the Text property to below:<br>
 
 ``` php
-Concatenate("一致率:",Text(Round((ThisItem.MatchLate*100),2)),"%")
+Concatenate("Match :",Text(Round((ThisItem.MatchRate*100),2)),"%")
 ```
 
 ![](pasteimage/2020-03-17-07-11-54.png)
 
 
-### 3.3.5.ホーム画面
+### 3.3.5. Create a home screen
 
-1. 新たに空の画面を作成し、HomeScreenとする。<br>
+1. Add a new blank screen and name it HomeScreen<br>
 
-2. タイトル表示のラベル(TitleLabel)を作成する。<br>
+2. Add a label and name it TitleLabel<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|"顔認証アプリ"|
-|Size|フォント サイズ|40|
+|Text|Text|"Facial Recognition App"|
+|Size|Font size|40|
 
-3. PersongroupAddScreen に移動するボタン(MovePersonAddSCButton) を作成する。<br>
+3. Add a button and name it MovePersonAddSCButton to move to PersongroupAddScreen<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|"登録画面"|
+|Text|Text|"Registeration"|
 
-4. MovePersonAddSCButton の OnSelect プロパティに以下を指定する。
+4. Change the OnSelect property of MovePersonAddSCButton to below.
 
 ``` php
-//PersongroupAddScreenに移動
+//Move to PersongroupAddScreen
 Navigate(PersongroupAddScreen,ScreenTransition.Fade)
 ```
 
-5. FaceAuthenticationScreen に移動するボタン(MoveFaceAuthenticationSCButton) を作成する。<br>
+5. Create a button and name it MoveFaceAuthenticationSCButton to move to FaceAuthenticationScreen<br>
 
-|プロパティ名|日本語名|値|
+|Property Name|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|"認証画面"|
+|Text|Text|"Recognition"|
 
-6. MoveFaceAuthenticationSCButton の OnSelect プロパティに以下を指定する。
+6. Change the OnSelect property of MoveFaceAuthenticationSCButton to below.
 
 ``` php
-//PersongroupAddScreenに移動
+//Move to PersongroupAddScreen
 Navigate(FaceAuthenticationScreen,ScreenTransition.Fade)
 ```
 
-7. MoveFaceAuthenticationSCButton の DisplayMode プロパティに以下を指定する。
+7. Change the DisplayMode property of MoveFaceAuthenticationSCButton to below.
 
 ``` php
-//Nameが未入力の場合はボタン操作を無効化する
+//If Name is not entered, disable the button.
 If(IsBlank(PersonNameInput.Text),DisplayMode.Disabled,DisplayMode.Edit)
 ```
-8. ResultScreen に移動するボタン(MoveResultSCButton) を作成する。<br>
+8. Add a button and name it MoveResultSCButton to move to ResultScreen<br>
 
-|プロパティ名|日本語名|値|
+|Property|Display Name|Value|
 |:--|:--|:--|
-|Text|テキスト|"履歴画面"|
+|Text|Text|"History Screen"|
 
-9. MoveResultSCButton の OnSelect プロパティに以下を指定する。
+9. Change the OnSelect property of MoveResultSCButton to below.
 
 ``` php
-//PersongroupAddScreenに移動
+//Move to PersongroupAddScreen
 Navigate(ResultScreen,ScreenTransition.Fade)
 ```
 
-### 3.3.6.戻るボタンの設置
+### 3.3.6. Add the Back navigation button
 
-1. PersongroupAddScreen に移動する<br>
+1. Go to PersongroupAddScreen<br>
 
-2. アイコンから「戻る」を選択する<br>
+2. Select Back from list of icons<br>
 ![](pasteimage/2020-03-17-07-15-48.png)
 
-3. OnSelect プロパティに以下を指定する<br>
+3. Change the OnSelect property to below<br>
 ``` php
-//前の画面に戻る
+//Go to the previous screen
 Back(ScreenTransition.Fade)
 ```
-4. HomeScreen以外の全ての画面に、戻るボタンをコピーアンドペーストを行う。<br>
+4. Copy and paste the icon to every screen except the HomeScreen<br>
 
-### 3.3.7.HomeScreenの順番を変更
+### 3.3.7. Changing the order of HomeScreen
 
-アプリ起動時は必ずHomeScreenを表示する必要があるため
-HomeScreenを一番上に移動する。
+To make sure the app shows the HomeScreen first when the app is launched, change the order of HomeScreen to be at the top.
 
 ![](pasteimage/2020-03-17-07-23-43.png)
 
 ![](pasteimage/2020-03-17-07-24-14.png)
 
 
-## 3.4. テスト
+## 3.4. Testing the app
 
-画面右上の再生ボタンをクリックすることで
-開いている画面からテストを行うことが可能です。
+Press the play button on the top right corner of the screen to try your app out.
 
 ![](pasteimage/2020-03-17-05-13-25.png)
 
-## 3.5. 保存
+## 3.5. Saving the app
 
-ファイルをクリックし、保存をクリックすることで、現在の状態を保存することができます。
+Go to File, select Save to save your current app configuration.
 
 ![](pasteimage/2020-03-17-05-14-40.png)
 ![](pasteimage/2020-03-17-05-16-04.png)
 
-また、その後発行をクリックすることで、保存した状態のアプリをスマートフォンで使用することが可能になります。
+By clicking Publish, you can now run the app on your smartphone devices.
 
 ![](pasteimage/2020-03-17-05-17-11.png)
 
-# 4. 試してみる
+# 4. Try out the app on your device
 
-実際に作ったアプリを使ってみて、顔認証ができるか試してみましょう！
+Try running the app on your device to see if it works!
